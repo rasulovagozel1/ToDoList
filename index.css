@@ -1,0 +1,105 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    padding: 10px;
+    position: relative;
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+.container::before{
+    position: absolute;
+    content: " ";
+    height: 50px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    top: 0;
+    background-color: #FFDC40;
+}
+.container h1{
+    margin: 50px 0px 15px;
+    font-weight: 900;
+}
+.to-do-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#sort{
+    position: relative;
+    align-self: flex-end;
+    color: #979494;
+    border-radius: 25px;
+    right:10%;
+}
+#cancel{
+    z-index: 1;
+    align-self: flex-end;
+    color: #979494;
+    -webkit-text-stroke: 0px white;
+    padding: 12px 15% 12px 0px;
+}
+#plus{
+    position: absolute;
+    background-color: #9953F1;
+    color: white;
+    bottom:20px;
+    left: 25%;
+    border-radius:30px;
+    padding: 14px;
+}
+button{
+    background-color: #833AE0;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 6px;
+    margin: 10px;
+    width: 50%;
+}
+input{
+    padding: 10px 10px 10px 10px;
+    margin:-38px 10px 10px 10px;
+    width: 80%;
+    border:1px solid #C4C4C4;
+    border-radius: 8px;
+}
+li{
+    cursor: pointer;
+    margin-bottom: 1px;
+    font-size: 20px;
+}
+.list{
+    display: none;
+    width: 80%;
+    margin: 25px;
+    padding: 10px;
+    border: 1px solid #C4C4C4;
+    justify-content: space-between;
+}
+#element-remove-icon{
+    color: #C4C4C4;
+    position: absolute;
+    right: 13%;
+    -webkit-text-stroke: 0px #C4C4C4;
+    
+}
+#element-remove-icon:hover,#sort:hover,#cancel:hover,#plus:hover {
+    color: #833AE0;
+}
+button:hover{
+    color: black;
+}
